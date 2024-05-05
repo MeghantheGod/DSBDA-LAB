@@ -1,0 +1,17 @@
+import scala.io.StdIn
+
+object checkNumber {
+  def main(args: Array[String]): Unit = {
+    // Input a number
+    println("Enter a number:")
+    val number = StdIn.readDouble()
+    
+    // Check if the number is positive, negative, or zero
+    val result = if (number > 0) "Positive"
+                 else if (number < 0) "Negative"
+                 else "Zero"
+    
+    // Print the result
+    println(s"The number $number is $result")
+  }
+}
